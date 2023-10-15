@@ -1,2 +1,2 @@
 # first-JS-project
-this is my first contact with JS ever, thanks to my mentor it even works!
+this is my first contact with JS ever and it even works!
