@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- NavBar-->
+    <nav class="navbar">
+      <ul class="navbar">
+        <li>
+          <a href="index.html">
+            <img
+              class="active"
+              src="imges/logo_img.png"
+              alt="logo of coccinelle food"
+          /></a>
+        </li>
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+        <a href="searchRecipes.html" class="button">SEARCH HERE</a>
+      </ul>
+    </nav>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div class="container">
+      <div class="register">
+        <h1>Register Here</h1>
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" placeholder="Enter your first name" />
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" placeholder="Enter your last name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Enter Email</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-group">
+          <label for="birthday">Birthday</label>
+          <input type="date" id="birthday" name="birthday" />
+          <br />
+        </div>
+        <div class="radio-group">
+          <label>Receive marketing e-Mails:</label>
+          <input type="radio" id="receiveYes" name="receive_y" value="yes" />
+          <label for="receiveYes">Yes</label>
+          <input type="radio" name="receive_y" value="No" />
+          <label for="receiveNo">No</label>
+        </div>
+        <br />
+        <div class="select-group">
+          <label for="question">Select a unicorn:</label>
+          <select name="question" id="question">
+            <option value="q1">Which color is your favorite unicorn?</option>
+            <option value="q2">
+              If your unicorn can fly, how would it fly?
+            </option>
+            <option value="q3">Why do you love unicorns?</option>
+          </select>
+
+          <br /><br />
+          <div class="form-group textfield">
+            <label for="input_text">Answer the question</label>
+            <input
+              type="text"
+              id="input-text"
+              placeholder="Enter your answer"
+            />
+          </div>
+
+          <!-- <div class="input_text"><label for="input_text" id="input_text" name="input_text">Answer your question:</label>
+        </div> -->
+        </div>
+        <div class="submit-button">
+          <button onclick="myFunction()">Submit</button>
+          <p id="demo"></p>
+
+          <script>
+            function myFunction() {
+              let text = "Press a button!\nEither OK or Cancel.";
+              if (confirm(text) == true) {
+                text = "You pressed OK!";
+              } else {
+                text = "You canceled!";
+              }
+              document.getElementById("demo").innerHTML = text;
+            }
+          </script>
+          <!-- <input type="submit" value="Submit"  /> -->
+        </div>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-card">
+          <ul class="footer-links">
+            <li>
+              <a href="index.html">
+                <img
+                  class="active"
+                  src="imges/logo_img.png"
+                  alt="logo of coccinelle food"
+              /></a>
+            </li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <i class="icon1">
+            <a href="https://en.wikipedia.org/wiki/Sesame_Street"
+              ><img src="/icons/icon1.png" alt="icon funny1"
+            /></a>
+          </i>
+          <i class="icon2">
+            <a href="https://www.instagram.com/">
+              <img src="/icons/icon2.png" alt="icon funny2"
+            /></a>
+          </i>
+          <i class="icon3">
+            <a href="https://www.facebook.com/login/">
+              <img src="/icons/icon3.png" alt="icon funny3" />
+            </a>
+          </i>
+          <div class="footer-copyright">
+            <p>©2023-2023 Terms of Use by LiLu</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

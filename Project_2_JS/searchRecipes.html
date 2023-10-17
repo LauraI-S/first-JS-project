@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coccinelle</title>
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <!-- NavBar-->
+    <nav class="navbar">
+      <ul class="navbar">
+        <li>
+          <a href="index.html">
+            <img
+              class="active"
+              src="imges/logo_img.png"
+              alt="logo of coccinelle food"
+          /></a>
+        </li>
+        <li class="nav-item"><a href="register.html">Register</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+        <!--creating my searchbar-->
+        <div id="search-input" class="search-bar">
+          <label for="search"></label>
+          <input type="text" id="search" placeholder="enter" />
+        </div>
+      </ul>
+    </nav>
+
+    <br /><br /><br />
+    <br /><br /><br />
+    <br /><br /><br />
+    <div id="search-box">
+      <div id="search-recipe">
+        <h1>FIND YOUR RECIPE</h1>
+
+        <h2>how do you like it?</h2>
+        <br /><br /><br />
+
+        <div id="checkboxes">
+          <!-- APPLYING THE CHECKBOXES-->
+          <div class="vegan checkbox">
+            vegan recipes only:
+            <input id="vegan-checkbox" value="vegan" type="checkbox" />
+          </div>
+          <div class="vegetarian checkbox">
+            vegetarian recipes only:
+            <input
+              id="vegetarian-checkbox"
+              value="vegetarian"
+              type="checkbox"
+            />
+          </div>
+          <div class="glutenfree checkbox">
+            glutenfree recipes only:
+            <input
+              id="glutenfree-checkbox"
+              value="glutenFree"
+              type="checkbox"
+            />
+          </div>
+          <div class="veryhealthy checkbox">
+            it should be very healthy:
+            <input
+              id="veryhealthy-checkbox"
+              value="veryHealthy"
+              type="checkbox"
+            />
+          </div>
+        </div>
+      </div>
+
+      <br /><br /><br />
+
+      <!--! here you´ll find my cards with the pictures, titles,recipes of the recipes-->
+      <div id="recipes-container"></div>
+    </div>
+
+    <!--FOOTER-->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-card">
+          <ul class="footer-links">
+            <li>
+              <a href="index.html">
+                <img
+                  class="active"
+                  src="imges/logo_img.png"
+                  alt="logo of coccinelle food"
+              /></a>
+            </li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <i class="icon1">
+            <a href="https://en.wikipedia.org/wiki/Sesame_Street"
+              ><img src="/icons/icon1.png" alt="icon funny1"
+            /></a>
+          </i>
+          <i class="icon2">
+            <a href="https://www.instagram.com/">
+              <img src="/icons/icon2.png" alt="icon funny2"
+            /></a>
+          </i>
+          <i class="icon3">
+            <a href="https://www.facebook.com/login/">
+              <img src="/icons/icon3.png" alt="icon funny3" />
+            </a>
+          </i>
+          <div class="footer-copyright">
+            <p>©2023-2023 Terms of Use by LiLu</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--<script src="concepts.js"></script>-->
+    <script src="recipeData.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
